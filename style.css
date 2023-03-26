@@ -1,0 +1,141 @@
+* {
+    overflow-wrap: break-word;
+}
+
+body {
+    background-color: #F2F2F2;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+}
+
+.sedans {
+    padding: 48px;
+    background: #E28625;
+    height: 80%;
+    border-radius: 8px 0 0 8px;
+}
+
+.suv {
+    padding: 48px;
+    background: #006971;
+    height: 80%;
+}
+
+.luxury {
+    padding: 48px;
+    background: #004140;
+    height: 80%;
+    border-radius: 0 8px 8px 0;
+}
+
+h1 {
+    font-family: "Big Shoulders Display";
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #F2F2F2;
+    padding-top: 10px;
+}
+
+p {
+    font-family: "Lexend Deca";
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+    padding: 0 0 60px 0;
+}
+
+button {
+    border: none;
+    border-radius: 25px;
+    background: #F2F2F2;
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+    line-height: 25px;
+    padding: 11px 31px;
+    cursor: pointer;
+}
+
+.sedans-btn {
+    color: #E28625;
+}
+
+.suv-btn {
+    color: #006971;
+}
+
+.luxury-btn {
+    color: #004140;
+}
+
+button:hover {
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+footer {
+    font-family: "Lexend Deca";
+    font-size: smaller;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 930px) {
+    body {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        width: 327px;
+        padding-top: 50px;
+    }
+
+    p {
+        padding: 25px 0px 25px 0;
+    }
+
+    .sedans {
+        border-radius: 8px 8px 0 0;
+        height: 442px;
+    }
+
+    .suv {
+        height: 442px;
+    }
+
+    .luxury {
+        border-radius: 0 0 8px 8px;
+        height: 442px;
+        margin-bottom: 30px;
+    }
+
+    footer {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+    }
+
+}
